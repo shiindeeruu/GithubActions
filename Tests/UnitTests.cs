@@ -1,5 +1,4 @@
 ﻿using System;
-using Microsoft.SqlServer.Server;
 using NUnit.Framework;
 
 namespace GithubActionsLab
@@ -91,7 +90,7 @@ namespace GithubActionsLab
         [Test]
         public void Divide_Invalid_Shin()
         {
-            Assert.Throws<FormatException>(() => Program.Divide("7", "0"));
+            Assert.Throws<FormatException>(() => Program.Divide("7", "i"));
             Assert.Throws<FormatException>(() => Program.Divide("j", "8"));
             Assert.Throws<FormatException>(() => Program.Divide("k", "l"));
         }
