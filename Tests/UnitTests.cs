@@ -17,7 +17,7 @@ namespace GithubActionsLab
         [Test]
         public void Add_Invalid()
         {
-            Assert.Throws<FormatException>(() => Program.Add("1", "a"));
+            Assert.Throws<FormatException>(() => Program.Add("1", "0"));
             Assert.Throws<FormatException>(() => Program.Add("a", "1"));
             Assert.Throws<FormatException>(() => Program.Add("a", "a"));
         }
